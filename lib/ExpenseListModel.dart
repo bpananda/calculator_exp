@@ -1,7 +1,7 @@
 import 'dart:collection';
-import 'package:scoped_model/scoped_model.dart';
 import 'Expense.dart';
 import 'Database.dart';
+import 'package:scoped_model/scoped_model.dart';
 
 class ExpenseListModel extends Model {
   ExpenseListModel() {
@@ -10,10 +10,6 @@ class ExpenseListModel extends Model {
   final List<Expense> _items = [];
   UnmodifiableListView<Expense> get items =>
       UnmodifiableListView(_items);
-
-  /*Future<double> get totalExpense {
-      return SQLiteDbProvider.db.getTotalExpense();
-   }*/
 
   double get totalExpense {
     double amount = 0.0;
