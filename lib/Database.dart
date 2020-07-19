@@ -25,36 +25,6 @@ class SQLiteDbProvider {
       await db.execute(
           "INSERT INTO Expense ('id', 'amount', 'date', 'category') values (?, ?, ?, ?)",[1, 1000, '2019-04-01 10:00:00', "Food"]
       );
-      /*await db.execute(
-               "INSERT INTO Product ('id', 'name', 'description', 'price', 'image')
-               values (?, ?, ?, ?, ?)", [
-                  2, "Pixel", "Pixel is the most feature phone ever", 800, "pixel.png"
-               ]
-            );
-            await db.execute(
-               "INSERT INTO Product ('id', 'name', 'description', 'price', 'image')
-               values (?, ?, ?, ?, ?)", [
-                  3, "Laptop", "Laptop is most productive development tool", 2000, "laptop.png"
-               ]
-            );
-            await db.execute(
-               "INSERT INTO Product ('id', 'name', 'description', 'price', 'image')
-               values (?, ?, ?, ?, ?)", [
-                  4, "Tablet", "Laptop is most productive development tool", 1500, "tablet.png"
-               ]
-            );
-            await db.execute(
-               "INSERT INTO Product ('id', 'name', 'description', 'price', 'image')
-               values (?, ?, ?, ?, ?)", [
-                  5, "Pendrive", "iPhone is the stylist phone ever", 100, "pendrive.png"
-               ]
-            );
-            await db.execute(
-               "INSERT INTO Product ('id', 'name', 'description', 'price', 'image')
-               values (?, ?, ?, ?, ?)", [
-                  6, "Floppy Drive", "iPhone is the stylist phone ever", 20, "floppy.png"
-               ]
-            ); */
     }
     );
   }
